@@ -12,15 +12,16 @@ function Partners() {
       {/* Top Section */}
       <div className="text-left mb-16">
         <h1 className="lg:text-8xl md:text-5xl font-extrabold mb-6 uppercase">
-          Partners in <br /> Meaningful <br /> Change
+          Partners in <br /> Faith, Fashion <br /> & Community
         </h1>
         <p className="text-lg text-gray-300 mb-8 text-left">
-          At Yohan Labs, we collaborate with forward-thinking businesses and
-          organizations to build digital solutions that inspire innovation,
-          empower communities, and create lasting impact.
+          At <span className="text-amber-500 font-bold">NEEMA by Malui</span>,
+          we partner with churches, artisans, designers, and communities to
+          create faith-inspired fashion that uplifts, empowers, and makes a
+          lasting impact.
         </p>
         <button className="btn bg-gray-200 text-black p-4 rounded-sm">
-          Our Work
+          View Collections
         </button>
       </div>
 
@@ -29,13 +30,13 @@ function Partners() {
         {/* Card 1 */}
         <div className="card bg-base-100 w-140 shadow-sm">
           <figure>
-            <img src={partner1} alt="Tech Startups" className="rounded-xl" />
+            <img src={partner1} alt="Churches" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-left gap-2">
-            <h2 className="card-title py-8">Tech Startups</h2>
+            <h2 className="card-title py-8">Churches</h2>
             <p>
-              Supporting Kenyan startups with scalable and user-friendly
-              platforms that accelerate growth.
+              Collaborating with local and global churches to design modest,
+              faith-rooted collections for special events and everyday wear.
             </p>
             <div className="card-actions pt-10">
               <button className="btn btn-outline border-2 p-3">Learn More</button>
@@ -46,13 +47,13 @@ function Partners() {
         {/* Card 2 */}
         <div className="card bg-base-100 w-140 shadow-sm">
           <figure>
-            <img src={partner2} alt="Local Enterprises" className="rounded-xl" />
+            <img src={partner2} alt="Artisans" className="rounded-xl" />
           </figure>
-          <div className="card-body items-center tex-left gap-2">
-            <h2 className="card-title py-8">Local Enterprises</h2>
+          <div className="card-body items-center text-left gap-2">
+            <h2 className="card-title py-8">Artisans</h2>
             <p>
-              Helping small and medium businesses in Kenya digitize and expand
-             reach with custom web solutions.
+              Working hand-in-hand with local tailors and artisans to craft
+              unique, high-quality garments that celebrate creativity and faith.
             </p>
             <div className="card-actions pt-10">
               <button className="btn btn-outline border-2 p-3">Learn More</button>
@@ -63,13 +64,13 @@ function Partners() {
         {/* Card 3 */}
         <div className="card bg-base-100 w-140 shadow-sm">
           <figure>
-            <img src={partner3} alt="Nonprofits" className="rounded-xl" />
+            <img src={partner3} alt="Designers" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-left">
-            <h2 className="card-title py-8">Nonprofits</h2>
+            <h2 className="card-title py-8">Designers</h2>
             <p>
-              Partnering with NGOs to create platforms that raise awareness,
-              engage communities, and amplify impact.
+              Partnering with Christian and ethical designers to create pieces
+              that merge faith, elegance, and timeless fashion.
             </p>
             <div className="card-actions pt-10">
               <button className="btn btn-outline border-2 p-3">Learn More</button>
@@ -80,13 +81,13 @@ function Partners() {
         {/* Card 4 */}
         <div className="card bg-base-100 w-140 shadow-sm">
           <figure>
-            <img src={partner4} alt="Creative Brands" className="rounded-xl" />
+            <img src={partner4} alt="Communities" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-left">
-            <h2 className="card-title py-8">Creative Brands</h2>
+            <h2 className="card-title py-8">Communities</h2>
             <p>
-              Working with local creatives to design stunning digital
-              experiences that tell their unique stories.
+              Empowering women and youth in communities by creating sustainable
+              opportunities through faith-led fashion initiatives.
             </p>
             <div className="card-actions pt-10">
               <button className="btn btn-outline border-2 p-3">Learn More</button>

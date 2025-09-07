@@ -3,6 +3,7 @@ import Hero from '../components/Home.jsx/Hero'
 import Impact from '../components/Home.jsx/Impact'
 import Partners from '../components/Home.jsx/Partners'
 import Current from '../components/Home.jsx/Current'
+import Banner from '../components/Banner'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <Impact />
         <Partners />
         <Current />
+      
     </div>
   )
 }

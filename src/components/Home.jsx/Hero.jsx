@@ -11,28 +11,30 @@ function Hero() {
   const images = [img1, img2, img3, img4, img5];
   const [current, setCurrent] = useState(0);
 
-  // Auto slide every 5s
+  // Auto slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   }, [images.length]);
 
   return (
     <section className="max-w-[1400px] mx-auto flex flex-col items-start text-left px-4 py-16">
       {/* Heading */}
-      <h1 className="text-4xl md:text-5xl lg:text-8xl font-extrabold mb-8">
-        AN IMPACT FIRST <br /> CREATIVE PARTNER
+      <h1 className="text-4xl md:text-5xl lg:text-9xl font-extrabold mb-6 text-gray-200">
+        NEEMA BY<br></br> MALUI 
+       
       </h1>
-         
-          {/* Paragraph */}
+
+      {/* Paragraph */}
       <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
-        We help brands grow with creativity, strategy, and design that leaves a
-        lasting impact.
+        Celebrating style with purpose. At NEEMA by Malui, we blend timeless elegance with
+        Christian values, crafting clothing that inspires confidence, grace, and devotion.
       </p>
+
       {/* Carousel */}
-      <div className="relative w-full max-w-[1200px] h-64 md:h-96 lg:h-[500px] overflow-hidden rounded-lg shadow-lg">
+      <div className="relative w-full max-w-[1200px] h-64 md:h-96 lg:h-[500px] overflow-hidden rounded-xl shadow-lg">
         {images.map((src, index) => (
           <div
             key={index}
@@ -42,9 +44,26 @@ function Hero() {
           >
             <img
               src={src}
-              alt={`Slide ${index + 1}`}
+              alt={`NEEMA by Malui Slide ${index + 1}`}
               className="w-full h-full object-cover"
             />
+            {/* Cross Overlay */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <svg
+                className="w-24 h-24 md:w-32 md:h-32 text-white/20"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+            </div>
           </div>
         ))}
 
@@ -55,7 +74,7 @@ function Hero() {
               key={index}
               onClick={() => setCurrent(index)}
               className={`w-3 h-3 rounded-full ${
-                current === index ? "bg-white" : "bg-gray-400"
+                current === index ? "bg-amber-500" : "bg-gray-400"
               }`}
             ></button>
           ))}
