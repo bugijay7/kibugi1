@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 // Import your images
-import img1 from "../../assets/hero1.png";
-import img2 from "../../assets/hero2.png";
-import img3 from "../../assets/hero3.png";
-import img4 from "../../assets/hero4.png";
-import img5 from "../../assets/hero5.png";
+import img1 from "../../assets/hero1.jpeg";
+import img2 from "../../assets/hero2.jpeg";
+import img3 from "../../assets/hero3.jpeg";
+import img4 from "../../assets/hero4.jpeg";
+import img5 from "../../assets/hero5.jpeg";
 
 function Hero() {
   const images = [img1, img2, img3, img4, img5];
@@ -34,7 +34,7 @@ function Hero() {
       </p>
 
       {/* Carousel */}
-      <div className="relative w-full max-w-[1200px] h-64 md:h-96 lg:h-[500px] overflow-hidden rounded-xl shadow-lg">
+      <div className="relative w-full max-w-[300px] h-74 md:h-96 overflow-hidden rounded-xl shadow-lg">
         {images.map((src, index) => (
           <div
             key={index}
@@ -45,7 +45,7 @@ function Hero() {
             <img
               src={src}
               alt={`NEEMA by Malui Slide ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-cover"
             />
             {/* Cross Overlay */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">

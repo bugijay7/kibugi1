@@ -7,7 +7,7 @@ import Banner from '../components/Banner'
 
 function Home() {
   return (
-    <div>
+    <div data-aos="fade-up">
         <Hero />
         <Impact />
         <Partners />

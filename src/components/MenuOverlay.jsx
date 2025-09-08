@@ -1,6 +1,5 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 function MenuOverlay({ menuOpen, setMenuOpen }) {
   if (!menuOpen) return null;
@@ -10,6 +9,7 @@ function MenuOverlay({ menuOpen, setMenuOpen }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      transition={{ duration: 0.4 }}
       className="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center text-white z-50"
     >
       {/* Close Button */}

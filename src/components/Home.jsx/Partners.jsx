@@ -1,10 +1,10 @@
 import React from "react";
 
 // Import local images
-import partner1 from "../../assets/partners/hero2.png";
-import partner2 from "../../assets/partners/hero3.png";
-import partner3 from "../../assets/partners/hero4.png";
-import partner4 from "../../assets/partners/hero5.png";
+import partner1 from "../../assets/partners/partner1.jpeg";
+import partner2 from "../../assets/partners/designers.jpeg";
+import partner3 from "../../assets/partners/artisan.jpeg";
+import partner4 from "../../assets/partners/community.jpeg";
 
 function Partners() {
   return (
@@ -29,8 +29,12 @@ function Partners() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center">
         {/* Card 1 */}
         <div className="card bg-base-100 w-140 shadow-sm">
-          <figure>
-            <img src={partner1} alt="Churches" className="rounded-xl" />
+          <figure className="w-full h-64 overflow-hidden rounded-xl">
+            <img
+              src={partner1}
+              alt="Churches"
+              className="w-full h-full object-cover"
+            />
           </figure>
           <div className="card-body items-center text-left gap-2">
             <h2 className="card-title py-8">Churches</h2>
@@ -46,8 +50,12 @@ function Partners() {
 
         {/* Card 2 */}
         <div className="card bg-base-100 w-140 shadow-sm">
-          <figure>
-            <img src={partner2} alt="Artisans" className="rounded-xl" />
+          <figure className="w-full h-64 overflow-hidden rounded-xl">
+            <img
+              src={partner2}
+              alt="Artisans"
+              className="w-full h-full object-cover"
+            />
           </figure>
           <div className="card-body items-center text-left gap-2">
             <h2 className="card-title py-8">Artisans</h2>
@@ -63,8 +71,12 @@ function Partners() {
 
         {/* Card 3 */}
         <div className="card bg-base-100 w-140 shadow-sm">
-          <figure>
-            <img src={partner3} alt="Designers" className="rounded-xl" />
+          <figure className="w-full h-64 overflow-hidden rounded-xl">
+            <img
+              src={partner3}
+              alt="Designers"
+              className="w-full h-full object-cover"
+            />
           </figure>
           <div className="card-body items-center text-left">
             <h2 className="card-title py-8">Designers</h2>
@@ -80,8 +92,12 @@ function Partners() {
 
         {/* Card 4 */}
         <div className="card bg-base-100 w-140 shadow-sm">
-          <figure>
-            <img src={partner4} alt="Communities" className="rounded-xl" />
+          <figure className="w-full h-64 overflow-hidden rounded-xl">
+            <img
+              src={partner4}
+              alt="Communities"
+              className="w-full h-full object-cover"
+            />
           </figure>
           <div className="card-body items-center text-left">
             <h2 className="card-title py-8">Communities</h2>
