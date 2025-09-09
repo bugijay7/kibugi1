@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
 
 function MenuOverlay({ menuOpen, setMenuOpen }) {
